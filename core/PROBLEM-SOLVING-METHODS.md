@@ -24,6 +24,36 @@ summary: >
 3. **Isolate variables** - {{variable_control_approach}}
 4. **Validate with real data** - {{validation_method}}
 
+### **Document Lensing**^document-lensing
+**Principle**: Tactical precision for document editing with scope protection
+
+**HTML Comment Pattern**:
+```html
+<!-- goal: Precise content update without disrupting structure -->
+<!-- constraints: Preserve YAML, formatting, adjacent content -->
+<!-- end document lens section -->
+```
+
+**When to Use**:
+- Surgical edits requiring adjacent content protection
+- Format-sensitive document modifications
+- Integration with session lens (4-6 items) for strategic + tactical precision
+- YAML frontmatter preservation scenarios
+- Complex document structure maintenance
+
+**Selection Alternative**:
+For simple edits, use explicit selection boundaries:
+```markdown
+[start:10]
+Targeted modification here
+[end:12]
+```
+
+**Integration with Surgical Approach**:
+- Combines strategic focus (session lens) with tactical precision (document lens)
+- Protects document integrity while enabling surgical changes
+- Validates changes through scope-protected modifications
+
 **Recent Success Example:**
 - **Symptom**: {{problem_symptom}}
 - **Root Cause**: {{actual_root_cause}}
